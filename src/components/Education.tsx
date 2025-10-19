@@ -10,16 +10,13 @@ const Education = () => {
       period: "2021 - 2025"
     },
     {
-      degree: "Class 12",
+      degree: "Secondary Education",
       institution: "Ryan International School",
-      period: "2021",
-      grade: "78%"
-    },
-    {
-      degree: "Class 10",
-      institution: "Ryan International School",
-      period: "2019",
-      grade: "82%"
+      period: "2019 - 2021",
+      grades: [
+        { level: "Class 12", year: "2021", grade: "78%" },
+        { level: "Class 10", year: "2019", grade: "82%" }
+      ]
     }
   ];
 
@@ -68,6 +65,16 @@ const Education = () => {
                     <span>{edu.period}</span>
                     {(edu as any).grade && <span className="font-semibold text-accent ml-2">{(edu as any).grade}</span>}
                   </div>
+                  {(edu as any).grades && (
+                    <div className="mt-3 space-y-1 text-sm">
+                      {(edu as any).grades.map((g: any, i: number) => (
+                        <div key={i} className="flex justify-between text-foreground/80">
+                          <span>{g.level} ({g.year})</span>
+                          <span className="font-semibold text-accent">{g.grade}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
