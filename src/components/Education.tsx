@@ -4,10 +4,10 @@ const Education = () => {
   const education = [
     {
       degree: "Bachelor of Technology in Computer Science",
-      specialization: "Cybersecurity",
+      major: "Cybersecurity",
+      minor: "Cloud",
       institution: "University of Petroleum and Energy Studies",
-      period: "2021 - 2025",
-      grade: "CGPA: 6.8"
+      period: "2021 - 2025"
     },
     {
       degree: "Class 12",
@@ -49,17 +49,24 @@ const Education = () => {
                   <h3 className="text-xl font-heading font-semibold text-foreground mb-2">
                     {edu.degree}
                   </h3>
-                  {edu.specialization && (
-                    <p className="text-primary font-medium mb-2">
-                      {edu.specialization}
-                    </p>
+                  {(edu as any).major && (
+                    <div className="mb-2">
+                      <p className="text-primary font-medium">
+                        Major: {(edu as any).major}
+                      </p>
+                      {(edu as any).minor && (
+                        <p className="text-accent font-medium">
+                          Minor: {(edu as any).minor}
+                        </p>
+                      )}
+                    </div>
                   )}
                   <p className="text-foreground/80 mb-2">
                     {edu.institution}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <div className="text-sm text-muted-foreground">
                     <span>{edu.period}</span>
-                    <span className="font-semibold text-accent">{edu.grade}</span>
+                    {(edu as any).grade && <span className="font-semibold text-accent ml-2">{(edu as any).grade}</span>}
                   </div>
                 </div>
               </div>
