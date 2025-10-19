@@ -18,6 +18,20 @@ const Experience = () => {
       ]
     },
     {
+      title: "Cloud Security Intern",
+      organization: "DCM Shriram Ltd",
+      location: "Lucknow",
+      period: "January 2025 – May 2025",
+      status: "Completed",
+      achievements: [
+        "Assisted in securing and optimizing cloud infrastructure across AWS environments",
+        "Implemented IAM policies, access controls, and compliance best practices",
+        "Analyzed cloud resource configurations to identify and mitigate vulnerabilities",
+        "Collaborated with DevOps and Security teams to strengthen cloud security posture",
+        "Documented findings, incident responses, and contributed to internal security reports"
+      ]
+    },
+    {
       title: "Social Worker",
       organization: "SpacECE",
       location: "Lucknow",
