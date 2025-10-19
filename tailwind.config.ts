@@ -16,6 +16,8 @@ export default {
       fontFamily: {
         heading: ['Cinzel', 'serif'],
         body: ['Lora', 'serif'],
+        handwriting: ['Shadows Into Light', 'cursive'],
+        ink: ['Permanent Marker', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
