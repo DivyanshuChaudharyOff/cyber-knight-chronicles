@@ -63,7 +63,7 @@ const Contact = () => {
                 <div className="w-24 h-1 bg-primary/30 mx-auto rounded-full"></div>
               </div>
 
-              <p className="text-xl font-handwriting ink-text leading-relaxed handwritten italic text-center border-2 border-primary/20 rounded-lg p-4 bg-primary/5">
+              <p className="text-lg font-body ink-text leading-relaxed italic text-center border-2 border-primary/20 rounded-lg p-4 bg-primary/5">
                 "Whether you seek alliance, counsel, or wish to embark on a quest together, 
                 the tavern is always open for noble companions."
               </p>
@@ -87,8 +87,8 @@ const Contact = () => {
                         <Icon className="w-6 h-6 text-primary" />
                       </div>
                       <div className="flex-1">
-                        <p className="text-sm font-handwriting ink-text/70 mb-1">{contact.label}</p>
-                        <p className="font-handwriting ink-text font-medium group-hover:text-primary transition-colors">
+                        <p className="text-sm font-body ink-text mb-1 font-medium">{contact.label}</p>
+                        <p className="font-body ink-text group-hover:text-primary transition-colors">
                           {contact.value}
                         </p>
                       </div>
@@ -109,14 +109,14 @@ const Contact = () => {
               </div>
 
               <div className="mt-8 text-center">
-                <p className="font-handwriting ink-text text-lg leading-relaxed handwritten" style={{ animationDelay: '0.2s' }}>
+                <p className="font-body ink-text text-base leading-relaxed italic">
                   "May your networks stay secure and your incidents be few."
                 </p>
               </div>
 
               {/* Signature */}
               <div className="mt-8 text-center border-t border-border pt-6">
-                <p className="text-sm font-handwriting ink-text/60">
+                <p className="text-sm font-body ink-text/70">
                   © {new Date().getFullYear()} Divyanshu Chaudhary. All quests reserved.
                 </p>
               </div>
