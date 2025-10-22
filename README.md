@@ -56,17 +56,6 @@ Open [http://localhost:3000](http://localhost:3000) to view locally.
 
 ---
 
-## 🛡 Skills & Tools
-
-| Frontend            | Backend           | Security               | Tools                                       |
-| ------------------- | ----------------- | ---------------------- | ------------------------------------------- |
-| React / Loveable AI | Node.js / Express | Wireshark, Nmap        | Git, VSCode                                 |
-| HTML / CSS / TS     | Flask / Python    | Burp Suite, Metasploit | Figma (removed in UI, only for prototyping) |
-
-*Hover over skills for 🔮 interactive effect (on website!)*
-
----
-
 ## 🌟 Projects
 
 | Project                  | Tech                   | Highlights                                     |
