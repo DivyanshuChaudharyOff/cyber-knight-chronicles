@@ -2,13 +2,13 @@ import { Sword, Calendar, MapPin, Shield } from "lucide-react";
 import { QuestParchment } from "./animations/QuestParchment";
 
 const Experience = () => {
-  const quests = [
+  const jobs = [
     {
       title: "SOC Analyst L1",
       organization: "National Informatics Centre (NiC)",
       location: "Central Vista, New Delhi",
-      period: "Current Quest",
-      status: "Active",
+      period: "Current Job",
+      status: "In Progress",
       achievements: [
         "Among the first L1 analysts for Central Vista SOC operations",
         "Designed and implemented official SOP for SOC procedures",
@@ -57,7 +57,7 @@ const Experience = () => {
           <div className="inline-flex items-center gap-3 mb-4">
             <Sword className="w-8 h-8 text-primary" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
-              Quest Log
+              Jobs
             </h2>
             <Sword className="w-8 h-8 text-primary" />
           </div>
@@ -65,7 +65,7 @@ const Experience = () => {
         </div>
 
         <div className="space-y-8">
-          {quests.map((quest, index) => (
+          {jobs.map((job, index) => (
             <div 
               key={index}
               className="quest-card group"
@@ -74,16 +74,18 @@ const Experience = () => {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="text-2xl font-heading font-semibold text-accent">
-                      {quest.title}
+                      {job.title}
                     </h3>
-                    {quest.status === "Active" && (
-                      <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full border border-primary animate-glow">
-                        Active Quest
-                      </span>
-                    )}
+                    <span className={`px-4 py-1.5 font-ink text-sm font-bold uppercase tracking-wider transform -rotate-3 shadow-lg ${
+                      job.status === "In Progress" 
+                        ? "bg-primary/90 text-primary-foreground border-2 border-primary" 
+                        : "bg-muted text-muted-foreground border-2 border-border"
+                    }`}>
+                      {job.status}
+                    </span>
                   </div>
                   <p className="text-xl text-foreground mb-3">
-                    {quest.organization}
+                    {job.organization}
                   </p>
                 </div>
                 <Shield className="w-12 h-12 text-primary/30 group-hover:text-primary transition-colors" />
@@ -92,16 +94,16 @@ const Experience = () => {
               <div className="flex flex-wrap gap-4 mb-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  <span>{quest.period}</span>
+                  <span>{job.period}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>{quest.location}</span>
+                  <span>{job.location}</span>
                 </div>
               </div>
 
               <div className="space-y-3">
-                {quest.achievements.map((achievement, idx) => (
+                {job.achievements.map((achievement, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                     <p className="text-foreground/90">{achievement}</p>

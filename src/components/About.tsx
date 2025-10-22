@@ -1,17 +1,38 @@
 import { Flame, Feather } from "lucide-react";
 import { CampfireFlame } from "./animations/CampfireFlame";
 import { MagicScroll } from "./animations/MagicScroll";
+import { useEffect, useState, useRef } from "react";
 
 const About = () => {
+  const [scrollVisible, setScrollVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setScrollVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="about" className="py-20 px-4 relative">
+    <section id="about" className="py-20 px-4 relative" ref={sectionRef}>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-8">
             <CampfireFlame />
           </div>
           <div className="mb-6">
-            <MagicScroll />
+            <MagicScroll isOpen={scrollVisible} />
           </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <Flame className="w-8 h-8 text-primary ember-pulse" />
