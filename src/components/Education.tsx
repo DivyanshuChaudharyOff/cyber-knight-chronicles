@@ -1,4 +1,5 @@
 import { GraduationCap, BookOpen } from "lucide-react";
+import { GuildCrest } from "./animations/GuildCrest";
 
 const Education = () => {
   const education = [
@@ -24,6 +25,9 @@ const Education = () => {
     <section id="education" className="py-20 px-4 relative bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <GuildCrest />
+          </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <GraduationCap className="w-8 h-8 text-primary" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">

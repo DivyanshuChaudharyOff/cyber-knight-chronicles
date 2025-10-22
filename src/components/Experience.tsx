@@ -1,4 +1,5 @@
 import { Sword, Calendar, MapPin, Shield } from "lucide-react";
+import { QuestParchment } from "./animations/QuestParchment";
 
 const Experience = () => {
   const quests = [
@@ -50,6 +51,9 @@ const Experience = () => {
     <section id="experience" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <QuestParchment />
+          </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <Sword className="w-8 h-8 text-primary" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">

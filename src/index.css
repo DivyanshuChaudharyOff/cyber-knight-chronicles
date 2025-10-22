@@ -182,4 +182,23 @@ All colors MUST be HSL.
   .handwritten {
     animation: quill-write 0.5s ease-out forwards;
   }
+
+  @keyframes sword-slash {
+    0% { transform: translateX(0) scaleX(1); opacity: 1; }
+    50% { transform: translateX(10px) scaleX(2); opacity: 0.5; }
+    100% { transform: translateX(20px) scaleX(0); opacity: 0; }
+  }
+
+  .sword-slash {
+    animation: sword-slash 0.3s ease-out forwards;
+  }
+
+  .clip-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
 }

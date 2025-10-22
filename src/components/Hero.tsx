@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Scroll } from "lucide-react";
 import heroImage from "@/assets/knight-campfire.jpg";
+import { KnightBattle } from "./animations/KnightBattle";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -15,6 +16,11 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background"></div>
+        
+        {/* Knight Battle Animation */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <KnightBattle />
+        </div>
       </div>
 
       {/* Floating Particles */}

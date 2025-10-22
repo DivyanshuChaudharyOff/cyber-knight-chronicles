@@ -1,4 +1,5 @@
 import { Award, Trophy } from "lucide-react";
+import { TrophyReveal } from "./animations/TrophyReveal";
 
 const Certifications = () => {
   const certifications = [
@@ -21,6 +22,9 @@ const Certifications = () => {
     <section id="certifications" className="py-20 px-4 relative bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <TrophyReveal />
+          </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <Trophy className="w-8 h-8 text-accent" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">

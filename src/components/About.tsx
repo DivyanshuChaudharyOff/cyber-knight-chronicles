@@ -1,10 +1,18 @@
 import { Flame, Feather } from "lucide-react";
+import { CampfireFlame } from "./animations/CampfireFlame";
+import { MagicScroll } from "./animations/MagicScroll";
 
 const About = () => {
   return (
     <section id="about" className="py-20 px-4 relative">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
+          <div className="flex justify-center mb-8">
+            <CampfireFlame />
+          </div>
+          <div className="mb-6">
+            <MagicScroll />
+          </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <Flame className="w-8 h-8 text-primary ember-pulse" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
