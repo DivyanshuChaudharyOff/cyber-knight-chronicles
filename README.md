@@ -1,95 +1,73 @@
-# 🌌 Divyanshu Chaudhary's Portfolio Website
+# Welcome to your Lovable project
 
-![Header Animation](https://img.shields.io/badge/Portfolio-🚀-purple?style=for-the-badge\&logo=github)
+## Project info
 
-Hi there! I'm **Divyanshu Chaudhary**, a passionate **Cybersecurity & Web Developer**.
-This is my interactive, AI-powered portfolio built with **Loveable AI** and **TypeScript**.
+**URL**: https://lovable.dev/projects/ffdb8e91-1274-4c23-98f3-0e92e3920c05
 
----
+## How can I edit this code?
 
-## ✨ Features
+There are several ways of editing your application.
 
-* 💜 **Purple-themed** modern design
-* ⚡ **Smooth animations** with hover effects and dynamic sections
-* 🖥 **Responsive design**: Desktop, Tablet, Mobile friendly
-* 🛠 Built with **TypeScript + Loveable AI components** for type-safe interactivity
-* 📂 Sections: About Me, Skills, Projects, Contact
-* 🔗 Direct links to GitHub, LinkedIn, and Email
+**Use Lovable**
 
----
+Simply visit the [Lovable Project](https://lovable.dev/projects/ffdb8e91-1274-4c23-98f3-0e92e3920c05) and start prompting.
 
-## 🚀 Live Demo
+Changes made via Lovable will be committed automatically to this repo.
 
-Check it out here:
-[![Live Website](https://img.shields.io/badge/Live-Demo-purple?style=for-the-badge)](https://yourwebsite.com)
+**Use your preferred IDE**
 
----
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## 🖌 Project Structure
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-```text
-portfolio-website/
-│
-├── src/
-│   ├── components/   # Reusable UI components
-│   ├── pages/        # About, Projects, Contact pages
-│   ├── styles/       # CSS/SCSS for animations & theme
-│   └── index.ts      # Entry point
-│
-├── public/           # Static assets (images, icons)
-├── package.json      # Dependencies & scripts
-└── tsconfig.json     # TypeScript configuration
-```
+Follow these steps:
 
----
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-## 💻 Run Locally
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-```bash
-git clone https://github.com/DivyanshuChaudharyOff/portfolio-website.git
-cd portfolio-website
-npm install
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view locally.
+**Edit a file directly in GitHub**
 
----
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## 🌟 Projects
+**Use GitHub Codespaces**
 
-| Project                  | Tech                   | Highlights                                     |
-| ------------------------ | ---------------------- | ---------------------------------------------- |
-| Full-Stack E-Commerce    | Flask + React + Stripe | Dynamic cart, user auth, 10k+ concurrent users |
-| Cybersecurity E-Learning | TypeScript + Loveable  | Interactive AI quizzes and modules             |
-| Honeypot on AWS          | Python + AWS           | Real-time monitoring of simulated attacks      |
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-*Each project card on website has smooth **hover animations** and live demo links*
+## What technologies are used for this project?
 
----
+This project is built with:
 
-## 🔗 Connect With Me
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/divyanshu-chaudhary-407907230)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/DivyanshuChaudharyOff)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:divyanshuchaudhary304@gmail.com)
+## How can I deploy this project?
 
----
+Simply open [Lovable](https://lovable.dev/projects/ffdb8e91-1274-4c23-98f3-0e92e3920c05) and click on Share -> Publish.
 
-## 🎨 Animations & Design
+## Can I connect a custom domain to my Lovable project?
 
-* **Smooth hover animations** on buttons & project cards
-* **Dynamic badges** for skills & technologies
-* **Purple gradient theme** 🌌
-* **AI-powered interactive components** using **Loveable**
+Yes, you can!
 
----
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-## 📄 License
-
-MIT License – see [LICENSE](LICENSE)
-
----
-
-> Made with ❤️ using **Loveable AI** + **TypeScript**
-> Animated, interactive, and purple-themed ✨
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
