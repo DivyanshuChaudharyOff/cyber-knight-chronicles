@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Download, Scroll } from "lucide-react";
 import heroImage from "@/assets/knight-campfire.jpg";
 import { KnightBattle } from "./animations/KnightBattle";
+import { PixelKnightAttack } from "./animations/PixelKnightAttack";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -21,6 +22,9 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <KnightBattle />
         </div>
+        
+        {/* Pixel Knight Attack */}
+        <PixelKnightAttack />
       </div>
 
       {/* Floating Particles */}
