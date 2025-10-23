@@ -1,5 +1,6 @@
 import { Sword, Calendar, MapPin, Shield } from "lucide-react";
 import { QuestParchment } from "./animations/QuestParchment";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   const jobs = [
@@ -9,6 +10,7 @@ const Experience = () => {
       location: "Central Vista, New Delhi",
       period: "Current Job",
       status: "In Progress",
+      link: "/soc-analyst",
       achievements: [
         "Among the first L1 analysts for Central Vista SOC operations",
         "Designed and implemented official SOP for SOC procedures",
@@ -65,17 +67,18 @@ const Experience = () => {
         </div>
 
         <div className="space-y-8">
-          {jobs.map((job, index) => (
-            <div 
-              key={index}
-              className="quest-card group"
-            >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h3 className="text-2xl font-heading font-semibold text-accent">
-                      {job.title}
-                    </h3>
+          {jobs.map((job, index) => {
+            const JobCard = (
+              <div 
+                key={index}
+                className={`quest-card group ${job.link ? 'cursor-pointer hover:scale-[1.02] transition-transform' : ''}`}
+              >
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-2">
+                      <h3 className="text-2xl font-heading font-semibold text-accent">
+                        {job.title}
+                      </h3>
                     <span className={`px-4 py-1.5 font-ink text-sm font-bold uppercase tracking-wider transform -rotate-3 shadow-lg ${
                       job.status === "In Progress" 
                         ? "bg-primary/90 text-primary-foreground border-2 border-primary" 
@@ -111,7 +114,16 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-          ))}
+            );
+
+            return job.link ? (
+              <Link key={index} to={job.link}>
+                {JobCard}
+              </Link>
+            ) : (
+              JobCard
+            );
+          })}
         </div>
       </div>
     </section>
