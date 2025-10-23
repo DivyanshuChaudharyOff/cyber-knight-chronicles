@@ -26,6 +26,7 @@ const Experience = () => {
       location: "Lucknow",
       period: "January 2025 – May 2025",
       status: "Completed",
+      link: "/cloud-security",
       achievements: [
         "Assisted in securing and optimizing cloud infrastructure across AWS environments",
         "Implemented IAM policies, access controls, and compliance best practices",
