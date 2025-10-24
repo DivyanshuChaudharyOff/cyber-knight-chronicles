@@ -22,6 +22,39 @@ const Projects = () => {
         "Designed modular, testable architecture with Docker and JSON telemetry storage"
       ],
       tech: ["Python", "Scapy", "Requests", "Docker", "JSON Schema"]
+    },
+    {
+      title: "AWS Honeypot Deployment",
+      description: "Cloud-based honeypot system deployed on AWS infrastructure to study intrusion patterns and attack vectors in real-time.",
+      achievements: [
+        "Captured and analyzed 1000+ attack attempts",
+        "Identified emerging threat patterns",
+        "Implemented automated threat intelligence gathering",
+        "Generated comprehensive security reports"
+      ],
+      tech: ["AWS", "Python", "ELK Stack", "Docker"]
+    },
+    {
+      title: "Cybersecurity E-Learning Platform",
+      description: "Comprehensive educational platform for cybersecurity training with interactive labs, assessments, and progress tracking.",
+      achievements: [
+        "Created 50+ interactive security modules",
+        "Integrated hands-on lab environments",
+        "Built gamified learning system",
+        "Developed automated assessment tools"
+      ],
+      tech: ["Node.js", "React", "MongoDB", "Docker"]
+    },
+    {
+      title: "Personal AI Assistant",
+      description: "Face-recognition based AI assistant with personality, sarcasm detection, and contextual memory capabilities.",
+      achievements: [
+        "Implemented real-time face recognition",
+        "Built conversational AI with memory",
+        "Created custom NLP models",
+        "Integrated voice command system"
+      ],
+      tech: ["Python", "TensorFlow", "OpenCV", "NLP"]
     }
   ];
 
@@ -39,7 +72,7 @@ const Projects = () => {
           <p className="text-muted-foreground text-lg">Projects & Accomplishments</p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto justify-items-center">
+        <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project, index) => (
             <div 
               key={index}
