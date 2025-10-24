@@ -5,52 +5,23 @@ import { Button } from "@/components/ui/button";
 const CloudSecurityBlog = () => {
   return (
     <div className="min-h-screen py-12 px-4 relative overflow-hidden">
-      {/* Animated background elements - MORE NOTICEABLE */}
+      {/* Animated background elements */}
       <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-1/3 left-1/4 w-56 h-56 bg-primary/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-primary/3 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
-      {/* Floating particles - MORE PARTICLES */}
-      {[...Array(15)].map((_, i) => (
+      {/* Floating particles */}
+      {[...Array(6)].map((_, i) => (
         <Sparkles
           key={i}
-          className="fixed text-primary/30 magic-particle"
+          className="fixed text-primary/20 magic-particle"
           style={{
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
-            animationDelay: `${i * 0.3}s`,
-            fontSize: `${16 + Math.random() * 12}px`
-          }}
-        />
-      ))}
-
-      {/* Floating cloud icons */}
-      {[...Array(5)].map((_, i) => (
-        <Cloud
-          key={`cloud-${i}`}
-          className="fixed text-accent/20 animate-float-slow"
-          style={{
-            top: `${20 + Math.random() * 60}%`,
-            left: `${Math.random() * 100}%`,
-            animationDelay: `${i * 1}s`,
-            fontSize: `${24 + Math.random() * 16}px`
-          }}
-        />
-      ))}
-
-      {/* Lightning bolts */}
-      {[...Array(3)].map((_, i) => (
-        <Zap
-          key={`zap-${i}`}
-          className="fixed text-primary/25 animate-pulse"
-          style={{
-            top: `${Math.random() * 100}%`,
-            left: `${Math.random() * 100}%`,
-            animationDelay: `${i * 0.7}s`,
-            fontSize: `${20 + Math.random() * 10}px`
+            animationDelay: `${i * 0.5}s`,
+            fontSize: `${12 + Math.random() * 8}px`
           }}
         />
       ))}
@@ -64,34 +35,30 @@ const CloudSecurityBlog = () => {
           </Button>
         </Link>
 
-        {/* Hero section with anime-style title - MORE DRAMATIC */}
+        {/* Hero section with anime-style title */}
         <div className="text-center mb-16 relative">
-          <div className="inline-flex items-center gap-4 mb-6 animate-scale-in">
-            <Cloud className="w-14 h-14 text-primary animate-pulse animate-glow" />
-            <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground animate-fade-in">
+          <div className="inline-flex items-center gap-4 mb-6">
+            <Cloud className="w-12 h-12 text-primary animate-pulse" />
+            <h1 className="text-4xl md:text-6xl font-heading font-bold text-foreground">
               Cloud Security Intern
             </h1>
-            <Lock className="w-14 h-14 text-accent animate-pulse ember-pulse" style={{ animationDelay: '0.5s' }} />
+            <Lock className="w-12 h-12 text-accent animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
-          <p className="text-xl text-primary font-semibold mb-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            DCM Shriram Ltd
-          </p>
-          <p className="text-muted-foreground animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            Lucknow • January 2025 – May 2025
-          </p>
+          <p className="text-xl text-primary font-semibold mb-2">DCM Shriram Ltd</p>
+          <p className="text-muted-foreground">Lucknow • January 2025 – May 2025</p>
           
-          {/* Decorative line with glow */}
+          {/* Decorative line */}
           <div className="mt-8 flex items-center justify-center gap-4">
-            <div className="h-px w-24 bg-gradient-to-r from-transparent via-primary to-primary animate-glow"></div>
-            <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-            <div className="h-px w-24 bg-gradient-to-l from-transparent via-primary to-primary animate-glow"></div>
+            <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary"></div>
+            <Sparkles className="w-5 h-5 text-primary" />
+            <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary"></div>
           </div>
         </div>
 
-        {/* Main blog content with staggered animations */}
-        <article className="quest-card space-y-8 animate-fade-in-up border-2 border-primary/20 shadow-xl shadow-primary/10">
+        {/* Main blog content */}
+        <article className="quest-card space-y-8 animate-fade-in">
           {/* Introduction */}
-          <div className="space-y-4 animate-slide-in-left">
+          <div className="space-y-4">
             <p className="text-lg leading-relaxed text-foreground/90">
               During my internship at DCM Shriram Ltd, I had the opportunity to work on optimizing and 
               securing cloud infrastructure within AWS environments, gaining hands-on experience in cloud 
@@ -101,12 +68,12 @@ const CloudSecurityBlog = () => {
           </div>
 
           {/* What I Did Section */}
-          <div className="space-y-4 animate-slide-in-right" style={{ animationDelay: '0.2s' }}>
+          <div className="space-y-4">
             <h2 className="text-3xl font-heading font-bold text-accent flex items-center gap-3">
-              <Shield className="w-8 h-8 animate-pulse" />
+              <Shield className="w-8 h-8" />
               What I Did
             </h2>
-            <div className="pl-4 border-l-4 border-primary/40 space-y-4 hover:border-primary transition-colors">
+            <div className="pl-4 border-l-4 border-primary/30 space-y-4">
               <p className="text-foreground/90 leading-relaxed">
                 A key part of my role was assisting in the implementation of Identity and Access Management 
                 (IAM) policies and access controls across various AWS services. I worked alongside senior 
@@ -123,12 +90,12 @@ const CloudSecurityBlog = () => {
           </div>
 
           {/* Collaboration & Learning Section */}
-          <div className="space-y-4 animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
+          <div className="space-y-4">
             <h2 className="text-3xl font-heading font-bold text-accent flex items-center gap-3">
-              <Users className="w-8 h-8 animate-pulse" />
+              <Users className="w-8 h-8" />
               Collaboration & Learning
             </h2>
-            <div className="pl-4 border-l-4 border-primary/40 space-y-4 hover:border-primary transition-colors">
+            <div className="pl-4 border-l-4 border-primary/30 space-y-4">
               <p className="text-foreground/90 leading-relaxed">
                 One of the most valuable parts of my internship was the collaboration with the DevOps and 
                 Security teams. I contributed to discussions on cloud security improvements, gaining insights 
@@ -141,12 +108,12 @@ const CloudSecurityBlog = () => {
           </div>
 
           {/* Documentation & Reporting Section */}
-          <div className="space-y-4 animate-slide-in-right" style={{ animationDelay: '0.6s' }}>
+          <div className="space-y-4">
             <h2 className="text-3xl font-heading font-bold text-accent flex items-center gap-3">
-              <Sparkles className="w-8 h-8 animate-pulse" />
+              <Sparkles className="w-8 h-8" />
               Documentation & Reporting
             </h2>
-            <div className="pl-4 border-l-4 border-primary/40 hover:border-primary transition-colors">
+            <div className="pl-4 border-l-4 border-primary/30">
               <p className="text-foreground/90 leading-relaxed">
                 In addition to hands-on work, I was responsible for documenting my findings, incident responses, 
                 and contributing to internal security reports. This experience helped me hone my ability to 
@@ -157,12 +124,12 @@ const CloudSecurityBlog = () => {
           </div>
 
           {/* Key Takeaways Section */}
-          <div className="space-y-4 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
+          <div className="space-y-4">
             <h2 className="text-3xl font-heading font-bold text-accent flex items-center gap-3">
-              <Zap className="w-8 h-8 animate-pulse" />
+              <Lock className="w-8 h-8" />
               Key Takeaways
             </h2>
-            <div className="pl-4 border-l-4 border-primary/40 hover:border-primary transition-colors">
+            <div className="pl-4 border-l-4 border-primary/30">
               <p className="text-foreground/90 leading-relaxed">
                 My internship at DCM Shriram Ltd gave me an in-depth look at cloud security practices, 
                 particularly within AWS environments. I learned about vulnerability management, IAM best 
@@ -173,16 +140,16 @@ const CloudSecurityBlog = () => {
             </div>
           </div>
 
-          {/* Decorative footer with glow */}
+          {/* Decorative footer */}
           <div className="pt-8 flex items-center justify-center gap-4">
-            <div className="h-px w-40 bg-gradient-to-r from-transparent via-primary to-transparent animate-glow"></div>
+            <div className="h-px w-32 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
           </div>
         </article>
 
         {/* Back button at bottom */}
-        <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '1s' }}>
+        <div className="mt-12 text-center">
           <Link to="/">
-            <Button className="group animate-glow">
+            <Button className="group">
               <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
               Return to Portfolio
             </Button>

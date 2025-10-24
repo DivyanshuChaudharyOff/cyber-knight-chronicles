@@ -67,11 +67,10 @@ const Experience = () => {
           <p className="text-muted-foreground text-lg">Experience & Adventures</p>
         </div>
 
-        <div className="space-y-8">
+        <div className="grid gap-8">
           {jobs.map((job, index) => {
             const JobCard = (
               <div 
-                key={index}
                 className={`quest-card group ${job.link ? 'cursor-pointer hover:scale-[1.02] transition-transform' : ''}`}
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
