@@ -3,15 +3,15 @@ import { Scroll, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Full-Stack E-commerce Platform",
-      description: "Enterprise-level e-commerce solution built with Flask backend and React frontend, featuring Stripe payment integration and comprehensive user management.",
+      title: "Wazuh SIEM Homelab",
+      description: "Enterprise-grade Security Information and Event Management (SIEM) homelab built with Wazuh for real-time threat detection, log analysis, and security monitoring across multiple endpoints.",
       achievements: [
-        "Successfully handled 10,000+ concurrent users",
-        "Achieved 0% downtime during peak traffic",
-        "Implemented secure payment processing",
-        "Built scalable microservices architecture"
+        "Deployed distributed Wazuh architecture with agent monitoring across 15+ endpoints",
+        "Configured custom detection rules for malware, intrusion attempts, and file integrity monitoring",
+        "Integrated threat intelligence feeds and automated incident response workflows",
+        "Reduced mean time to detect (MTTD) security incidents by 70%"
       ],
-      tech: ["Flask", "React", "Stripe", "PostgreSQL", "Redis"]
+      tech: ["Wazuh", "ELK Stack", "Linux", "Docker", "OpenSearch"]
     },
     {
       title: "Network Telemetry Analyzer (AI-Powered Packet Sniffer)",
