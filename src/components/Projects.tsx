@@ -14,37 +14,14 @@ const Projects = () => {
       tech: ["Flask", "React", "Stripe", "PostgreSQL", "Redis"]
     },
     {
-      title: "AWS Honeypot Deployment",
-      description: "Cloud-based honeypot system deployed on AWS infrastructure to study intrusion patterns and attack vectors in real-time.",
+      title: "Network Telemetry Analyzer (AI-Powered Packet Sniffer)",
+      description: "Built a secure Python-based packet sniffer that captures and anonymizes network metadata before sending it to an AI endpoint for real-time analysis.",
       achievements: [
-        "Captured and analyzed 1000+ attack attempts",
-        "Identified emerging threat patterns",
-        "Implemented automated threat intelligence gathering",
-        "Generated comprehensive security reports"
+        "Implemented SHA-256 anonymization, secure HTTPS telemetry, and environment-based configs",
+        "Ensured full legal compliance with metadata-only capture (no payloads or PII)",
+        "Designed modular, testable architecture with Docker and JSON telemetry storage"
       ],
-      tech: ["AWS", "Python", "ELK Stack", "Docker"]
-    },
-    {
-      title: "Cybersecurity E-Learning Platform",
-      description: "Comprehensive educational platform for cybersecurity training with interactive labs, assessments, and progress tracking.",
-      achievements: [
-        "Created 50+ interactive security modules",
-        "Integrated hands-on lab environments",
-        "Built gamified learning system",
-        "Developed automated assessment tools"
-      ],
-      tech: ["Node.js", "React", "MongoDB", "Docker"]
-    },
-    {
-      title: "Personal AI Assistant",
-      description: "Face-recognition based AI assistant with personality, sarcasm detection, and contextual memory capabilities.",
-      achievements: [
-        "Implemented real-time face recognition",
-        "Built conversational AI with memory",
-        "Created custom NLP models",
-        "Integrated voice command system"
-      ],
-      tech: ["Python", "TensorFlow", "OpenCV", "NLP"]
+      tech: ["Python", "Scapy", "Requests", "Docker", "JSON Schema"]
     }
   ];
 
@@ -62,7 +39,7 @@ const Projects = () => {
           <p className="text-muted-foreground text-lg">Projects & Accomplishments</p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto justify-items-center">
           {projects.map((project, index) => (
             <div 
               key={index}
