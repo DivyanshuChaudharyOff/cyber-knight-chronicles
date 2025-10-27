@@ -35,7 +35,7 @@ const Certifications = () => {
           <p className="text-muted-foreground text-lg">Achievements & Honors</p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 justify-items-center">
           {certifications.map((cert, index) => (
             <div 
               key={index}
