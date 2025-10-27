@@ -74,15 +74,18 @@ const Projects = () => {
 
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map((project, index) => (
-            <div 
+            <a
               key={index}
-              className="quest-card group"
+              href="https://github.com/DivyanshuChaudharyOff?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="quest-card group block"
             >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="text-2xl font-heading font-semibold text-accent flex-1">
                   {project.title}
                 </h3>
-                <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors cursor-pointer" />
+                <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
               
               <p className="text-foreground/90 mb-4 leading-relaxed">
@@ -108,7 +111,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
