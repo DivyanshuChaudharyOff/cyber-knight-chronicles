@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, Scroll } from "lucide-react";
 import heroImage from "@/assets/knight-campfire.jpg";
-import knightSprite from "@/assets/knight-attack-sprite.png";
 import { KnightBattle } from "./animations/KnightBattle";
 
 const Hero = () => {
@@ -45,19 +44,9 @@ const Hero = () => {
           <Scroll className="w-16 h-16 text-primary" />
         </div>
         
-        <div className="flex items-center justify-center gap-6 mb-4">
-          <div 
-            className="knight-sprite hidden md:block"
-            style={{ backgroundImage: `url(${knightSprite})` }}
-          />
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground drop-shadow-lg">
-            Divyanshu Chaudhary
-          </h1>
-          <div 
-            className="knight-sprite hidden md:block transform scale-x-[-1]"
-            style={{ backgroundImage: `url(${knightSprite})` }}
-          />
-        </div>
+        <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 text-foreground drop-shadow-lg">
+          Divyanshu Chaudhary
+        </h1>
         
         <div className="text-2xl md:text-3xl font-heading text-accent mb-6 drop-shadow-lg">
           Knight of the SOC
