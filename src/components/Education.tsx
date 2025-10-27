@@ -38,11 +38,11 @@ const Education = () => {
           <p className="text-muted-foreground text-lg">Training & Knowledge</p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+        <div className="flex flex-wrap gap-6 justify-center">
           {education.map((edu, index) => (
             <div 
               key={index}
-              className="quest-card group"
+              className="quest-card group w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
             >
               <div className="flex items-start gap-4 mb-4">
                 <BookOpen className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
