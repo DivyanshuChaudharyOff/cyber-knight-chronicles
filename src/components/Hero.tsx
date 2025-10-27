@@ -72,10 +72,12 @@ const Hero = () => {
             size="lg"
             variant="outline"
             className="text-lg px-8 py-6 border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-heading shadow-lg hover:shadow-xl transition-all"
-            onClick={() => window.open('#', '_blank')}
+            asChild
           >
-            <Download className="mr-2" />
-            Claim My Scroll
+            <a href="/Divyanshu_RESUME.pdf" download="Divyanshu_Chaudhary_Resume.pdf">
+              <Download className="mr-2" />
+              Claim My Scroll
+            </a>
           </Button>
         </div>
       </div>
