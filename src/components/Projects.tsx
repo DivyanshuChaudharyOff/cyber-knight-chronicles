@@ -79,7 +79,8 @@ const Projects = () => {
               href="https://github.com/DivyanshuChaudharyOff?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
-              className="quest-card group block"
+              className="quest-card group block animate-fade-in hover-scale"
+              style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="text-2xl font-heading font-semibold text-accent flex-1">

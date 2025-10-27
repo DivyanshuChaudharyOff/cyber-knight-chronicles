@@ -49,7 +49,7 @@ const Contact = () => {
           <div className="absolute -bottom-4 left-0 right-0 h-8 bg-gradient-to-t from-card/80 to-transparent rounded-b-3xl border-b-2 border-x-2 border-border"></div>
           
           {/* Main scroll */}
-          <div className="scroll-paper rounded-xl p-8 md:p-12 border-2 border-border relative overflow-hidden">
+          <div className="scroll-paper rounded-xl p-8 md:p-12 border-2 border-border relative overflow-hidden animate-fade-in">
             {/* Decorative quill */}
             <div className="absolute top-4 right-4 opacity-20">
               <Feather className="w-12 h-12 text-primary rotate-45" />
@@ -81,7 +81,8 @@ const Contact = () => {
                       href={contact.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-start gap-4 p-4 rounded-lg border-2 border-primary/20 hover:border-primary hover:bg-primary/5 transition-all group"
+                      className="flex items-start gap-4 p-4 rounded-lg border-2 border-primary/20 hover:border-primary hover:bg-primary/5 transition-all group animate-fade-in hover-scale"
+                      style={{ animationDelay: `${0.2 + index * 0.1}s` }}
                     >
                       <div className="p-2 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition-colors">
                         <Icon className="w-6 h-6 text-primary" />

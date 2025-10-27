@@ -48,7 +48,8 @@ const Skills = () => {
             return (
               <div 
                 key={index}
-                className="quest-card"
+                className="quest-card animate-fade-in hover-scale"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className={`p-3 rounded-lg bg-card ${category.color}`}>
