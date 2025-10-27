@@ -291,4 +291,29 @@ All colors MUST be HSL.
   .animate-float-slow {
     animation: float-slow 8s ease-in-out infinite;
   }
+
+  @keyframes knight-attack {
+    0% { background-position: 0 0; }
+    33% { background-position: -512px 0; }
+    66% { background-position: 0 -512px; }
+    100% { background-position: 0 0; }
+  }
+
+  .knight-sprite {
+    width: 128px;
+    height: 128px;
+    background-size: 1024px 1024px;
+    animation: knight-attack 1s steps(1) infinite;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
 }
