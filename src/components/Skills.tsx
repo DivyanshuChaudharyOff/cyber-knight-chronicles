@@ -1,4 +1,5 @@
 import { Shield, Swords, Network, Code } from "lucide-react";
+import SkillTreeGrow from "./animations/SkillTreeGrow";
 
 const Skills = () => {
   const skillCategories = [
@@ -32,6 +33,9 @@ const Skills = () => {
     <section id="skills" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
+          <div className="mb-6">
+            <SkillTreeGrow growing={true} />
+          </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <Shield className="w-8 h-8 text-primary" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">

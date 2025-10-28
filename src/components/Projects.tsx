@@ -1,4 +1,5 @@
 import { Scroll, ExternalLink } from "lucide-react";
+import ChronicleScroll from "./animations/ChronicleScroll";
 
 const Projects = () => {
   const projects = [
@@ -62,6 +63,9 @@ const Projects = () => {
     <section id="projects" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
+          <div className="mb-6">
+            <ChronicleScroll opening={true} />
+          </div>
           <div className="inline-flex items-center gap-3 mb-4">
             <Scroll className="w-8 h-8 text-primary" />
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
