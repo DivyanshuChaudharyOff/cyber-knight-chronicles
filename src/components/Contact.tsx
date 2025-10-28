@@ -117,7 +117,7 @@ const Contact = () => {
 
               {/* Signature */}
               <div className="mt-8 text-center border-t border-border pt-6">
-                <p className="text-sm font-body ink-text/70">
+                <p className="text-sm font-body text-foreground">
                   © {new Date().getFullYear()} Divyanshu Chaudhary. All quests reserved.
                 </p>
               </div>
