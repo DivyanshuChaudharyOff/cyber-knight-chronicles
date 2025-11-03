@@ -8,9 +8,9 @@ const Stats = () => {
   const stats = [
     {
       icon: Shield,
-      value: 1000,
+      value: 50,
       suffix: "+",
-      label: "Threats Mitigated",
+      label: "Security Labs Completed",
       color: "text-primary",
     },
     {
