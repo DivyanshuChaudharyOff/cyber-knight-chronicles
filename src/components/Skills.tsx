@@ -38,7 +38,7 @@ const Skills = () => {
     {
       title: "Development Magic",
       icon: Code,
-      color: "text-steel",
+      color: "text-primary",
       skills: [
         { name: "Python", level: 95 },
         { name: "Flask", level: 85 },
