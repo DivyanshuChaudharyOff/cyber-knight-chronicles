@@ -7,25 +7,45 @@ const Skills = () => {
       title: "Defensive Arsenal",
       icon: Shield,
       color: "text-secondary",
-      skills: ["Splunk", "Nessus", "Eramba", "OWASP ZAP"]
+      skills: [
+        { name: "Splunk", level: 90 },
+        { name: "Nessus", level: 85 },
+        { name: "Eramba", level: 80 },
+        { name: "OWASP ZAP", level: 75 }
+      ]
     },
     {
       title: "Offensive Weaponry",
       icon: Swords,
       color: "text-primary",
-      skills: ["Nmap", "Burp Suite", "Metasploit"]
+      skills: [
+        { name: "Nmap", level: 90 },
+        { name: "Burp Suite", level: 85 },
+        { name: "Metasploit", level: 80 }
+      ]
     },
     {
       title: "Network & Forensics",
       icon: Network,
       color: "text-accent",
-      skills: ["Wireshark", "TCP/IP", "Network Analysis", "Packet Inspection"]
+      skills: [
+        { name: "Wireshark", level: 95 },
+        { name: "TCP/IP", level: 90 },
+        { name: "Network Analysis", level: 88 },
+        { name: "Packet Inspection", level: 85 }
+      ]
     },
     {
       title: "Development Magic",
       icon: Code,
       color: "text-steel",
-      skills: ["Python", "Flask", "Node.js", "React", "Full-Stack Development"]
+      skills: [
+        { name: "Python", level: 95 },
+        { name: "Flask", level: 85 },
+        { name: "Node.js", level: 80 },
+        { name: "React", level: 90 },
+        { name: "Full-Stack Development", level: 85 }
+      ]
     }
   ];
 
@@ -64,14 +84,27 @@ const Skills = () => {
                   </h3>
                 </div>
                 
-                <div className="flex flex-wrap gap-3">
+                <div className="space-y-4">
                   {category.skills.map((skill, idx) => (
-                    <span 
-                      key={idx}
-                      className="px-4 py-2 bg-muted rounded-full text-foreground border border-border hover:border-primary hover:bg-primary/10 transition-all cursor-default"
-                    >
-                      {skill}
-                    </span>
+                    <div key={idx} className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="text-sm font-medium text-foreground">
+                          {skill.name}
+                        </span>
+                        <span className="text-xs text-muted-foreground">
+                          {skill.level}%
+                        </span>
+                      </div>
+                      <div className="h-2 bg-muted rounded-full overflow-hidden">
+                        <div
+                          className={`h-full ${category.color.replace('text-', 'bg-')} rounded-full transition-all duration-1000 ease-out`}
+                          style={{
+                            width: `${skill.level}%`,
+                            animationDelay: `${idx * 100}ms`
+                          }}
+                        />
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
