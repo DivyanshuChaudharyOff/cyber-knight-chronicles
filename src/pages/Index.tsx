@@ -10,10 +10,12 @@ import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import FloatingCTA from "@/components/FloatingCTA";
+import MouseTrail from "@/components/MouseTrail";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <MouseTrail />
       <Navigation />
       <Hero />
       <Stats />
