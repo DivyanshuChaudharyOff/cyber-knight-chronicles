@@ -7,7 +7,6 @@ import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
-import ThreatMap from "@/components/ThreatMap";
 import Contact from "@/components/Contact";
 import FloatingCTA from "@/components/FloatingCTA";
 
@@ -23,7 +22,6 @@ const Index = () => {
       <Skills />
       <Certifications />
       <Projects />
-      <ThreatMap />
       <Contact />
       <FloatingCTA />
     </div>
