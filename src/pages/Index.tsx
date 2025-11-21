@@ -10,10 +10,12 @@ import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import FloatingCTA from "@/components/FloatingCTA";
+import CustomCursor from "@/components/CustomCursor";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <CustomCursor />
       <Navigation />
       <Hero />
       <Stats />
