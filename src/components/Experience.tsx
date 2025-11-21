@@ -121,9 +121,7 @@ const Experience = () => {
                 {JobCard}
               </Link>
             ) : (
-              <div key={index}>
-                {JobCard}
-              </div>
+              JobCard
             );
           })}
         </div>
