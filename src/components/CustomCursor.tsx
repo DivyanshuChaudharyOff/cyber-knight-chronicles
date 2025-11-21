@@ -37,11 +37,13 @@ const CustomCursor = () => {
   return (
     <>
       <div
-        className="fixed pointer-events-none z-[9999] transition-all duration-200"
+        className="fixed pointer-events-none z-[9999]"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
           transform: `translate(-50%, -50%) rotate(${isHovering ? '0deg' : '-45deg'}) scale(${isClicking ? 0.9 : 1})`,
+          willChange: 'transform',
+          transition: 'transform 0.1s ease-out',
         }}
       >
         {isHovering ? (
